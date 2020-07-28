@@ -27,6 +27,7 @@
 
 .place {
   border: 5px solid black;
+  border-radius: 1%;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, .4),
               0 0 10px 0 rgba(0, 0, 0, .2);
   background-color: white;
@@ -86,7 +87,7 @@
   background-color: rgba(0, 0, 0, .1);
 }
 
-button {
+.button {
   border-radius: 2px;
   font-size: 14px;
   border: 1px solid darkslategray;
