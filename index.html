@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ClassCats</title>
+  <title>Class training on cats</title>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./vendor/normalize.css">
   <link rel="stylesheet" href="./styles.css">
@@ -19,19 +19,19 @@
         <h2 class="place__header">Shelter</h2>
         <div class="place__content">
           <ul class="cats cats_type_shelter">
-            <li class="cat" id="vasyasha">
+            <li class="cat" id="vasyasha" data-age="2 years" data-sex="Male" data-color="Grey">
               <h3 class="cat__name">Vasyasha</h3>
               <img class="cat__photo" src="./images/vasyasha.jpg" alt="Cat">
               <button class="button cat__info">Info</button>
               <button class="button cat__move">To Vet</button>
             </li>
-            <li class="cat" id="cracker">
+            <li class="cat" id="cracker" data-age="4 months" data-sex="Male" data-color="Red">
               <h3 class="cat__name">Cracker</h3>
               <img class="cat__photo" src="./images/cracker.jpg" alt="Cat">
               <button class="button cat__info">Info</button>
               <button class="button cat__move">To Vet</button>
             </li>
-            <li class="cat" id="undine">
+            <li class="cat" id="undine" data-age="1 year" data-sex="Female" data-color="Tabby">
               <h3 class="cat__name">Undine</h3>
               <img class="cat__photo" src="./images/undine.jpg" alt="Cat">
               <button class="button cat__info">Info</button>
@@ -44,13 +44,13 @@
         <h2 class="place__header">Vet</h2>
         <div class="place__content">
           <ul class="cats cats_type_vet">
-            <li class="cat" id="tomash">
+            <li class="cat" id="tomash" data-age="2 years" data-sex="Male" data-color="Tabby">
               <h3 class="cat__name">Tomash</h3>
               <img class="cat__photo" src="./images/tomash.jpg" alt="Cat">
               <button class="button cat__info">Info</button>
               <button class="button cat__move">To Shelter</button>
             </li>
-            <li class="cat" id="jamesy">
+            <li class="cat" id="jamesy" data-age="3 months" data-sex="Female" data-color="Black">
               <h3 class="cat__name">Jamesy</h3>
               <img class="cat__photo" src="./images/jamesy.jpg" alt="Cat">
               <button class="button cat__info">Info</button>
@@ -60,6 +60,14 @@
         </div>
       </section>
     </main>
+    <div class="popup">
+      <div class="popup__background">
+        <div class="popup__content">
+          <ul class="cat-info">
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </body>
 </html>

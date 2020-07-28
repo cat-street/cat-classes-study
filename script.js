@@ -4,9 +4,10 @@ class DOMHelper {
     newPlace.append(element);
   }
 
-  static clearEventListeners(element) {
+  static clearButton(element) {
     const clone = element.cloneNode(true);
     element.replaceWith(clone);
+    clone.className = 'button cat__move';
     return clone;
   }
 }
@@ -21,12 +22,15 @@ class Cat {
     this.moveButtonInit(type);
   }
 
-  infoButtonInit() {}
+  infoButtonInit() {
+    const infoButton = this.element.querySelector('.cat__info');
+  }
 
   moveButtonInit(type) {
     let moveButton = this.element.querySelector('.cat__move');
-    moveButton = DOMHelper.clearEventListeners(moveButton);
+    moveButton = DOMHelper.clearButton(moveButton);
     moveButton.textContent = type === 'shelter' ? 'To Vet' : 'To Shelter';
+    moveButton.classList.add(type === 'shelter' ? 'button_to-vet' : 'button_to-shelter');
     moveButton.addEventListener('click', this.moveFunction.bind(null, this.id));
   }
 

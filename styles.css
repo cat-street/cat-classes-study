@@ -19,15 +19,15 @@
 
 .main {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-  padding: 20px 50px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 4vmin;
+  padding: 4vmin;
   box-sizing: border-box;
 }
 
 .place {
-  border: 5px solid black;
-  border-radius: 1%;
+  border: 4px solid black;
+  border-radius: 1vmin;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, .4),
               0 0 10px 0 rgba(0, 0, 0, .2);
   background-color: white;
@@ -35,7 +35,7 @@
 
 .place__header {
   color: white;
-  margin: 0;
+  margin: -1px;
   padding: 10px 0 15px;
   text-align: center;
 }
@@ -45,7 +45,7 @@
 }
 
 .place_type_shelter .place__header {
-  background-color: var(--shelter-color);;
+  background-color: var(--shelter-color);
 }
 
 .place_type_vet {
@@ -53,17 +53,16 @@
 }
 
 .place_type_vet .place__header {
-  background-color: var(--vet-color);;
+  background-color: var(--vet-color);
 }
 
 .cats {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-template-rows: repeat(2, 1fr);
-  list-style: none;
   margin: 0;
-  padding: 20px;
-  gap: 20px
+  padding: 2vmin;
+  gap: 2vmin;
 }
 
 .cat {
@@ -71,14 +70,14 @@
   border-radius: 10px;
   text-align: center;
   overflow: hidden;
-  padding-bottom: 10px;
+  padding-bottom: 2vmin;
 }
 
 .cat__photo {
-  max-width: calc(100% - 20px);
+  max-width: calc(100% - 2vmin);
   border-radius: 5%;
   height: auto;
-  margin: 10px;
+  margin: 1vmin;
 }
 
 .cat__name {
@@ -91,4 +90,51 @@
   border-radius: 2px;
   font-size: 14px;
   border: 1px solid darkslategray;
+  font-weight: bold;
+  color: white;
+  background-color: darkslategray;
+  transition: opacity 200ms;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: .7;
+}
+
+.button_to-vet {
+  background-color: var(--vet-color);
+}
+
+.button_to-shelter {
+  background-color: var(--shelter-color);
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  visibility: hidden;
+}
+
+.popup_visible {
+  visibility: visible;
+}
+
+.popup__background {
+  background-color: rgba(0, 0, 0, .5);
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+}
+
+.popup__content {
+  min-width: 300px;
+  min-height: 200px;
+  background-color: rgba(255, 255, 255, .9);
+  margin: auto;
+  border-radius: 2vmin;
 }
