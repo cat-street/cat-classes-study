@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ClassCats</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./vendor/normalize.css">
   <link rel="stylesheet" href="./styles.css">
   <script src="./script.js" defer></script>
@@ -15,22 +16,22 @@
     </header>
     <main class="main">
       <section class="place place_type_shelter">
-        <h2 class="place__header">In shelter</h2>
+        <h2 class="place__header">Shelter</h2>
         <div class="place__content">
-          <ul class="cats">
-            <li class="cat">
+          <ul class="cats cats_type_shelter">
+            <li class="cat" id="vasyasha">
               <h3 class="cat__name">Vasyasha</h3>
               <img class="cat__photo" src="./images/vasyasha.jpg" alt="Cat">
               <button class="button cat__info">Info</button>
               <button class="button cat__move">To Vet</button>
             </li>
-            <li class="cat">
+            <li class="cat" id="cracker">
               <h3 class="cat__name">Cracker</h3>
               <img class="cat__photo" src="./images/cracker.jpg" alt="Cat">
               <button class="button cat__info">Info</button>
               <button class="button cat__move">To Vet</button>
             </li>
-            <li class="cat">
+            <li class="cat" id="undine">
               <h3 class="cat__name">Undine</h3>
               <img class="cat__photo" src="./images/undine.jpg" alt="Cat">
               <button class="button cat__info">Info</button>
@@ -40,16 +41,16 @@
         </div>
       </section>
       <section class="place place_type_vet">
-        <h2 class="place__header">In vet</h2>
+        <h2 class="place__header">Vet</h2>
         <div class="place__content">
-          <ul class="cats">
-            <li class="cat">
+          <ul class="cats cats_type_vet">
+            <li class="cat" id="tomash">
               <h3 class="cat__name">Tomash</h3>
               <img class="cat__photo" src="./images/tomash.jpg" alt="Cat">
               <button class="button cat__info">Info</button>
               <button class="button cat__move">To Shelter</button>
             </li>
-            <li class="cat">
+            <li class="cat" id="jamesy">
               <h3 class="cat__name">Jamesy</h3>
               <img class="cat__photo" src="./images/jamesy.jpg" alt="Cat">
               <button class="button cat__info">Info</button>

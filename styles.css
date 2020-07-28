@@ -1,13 +1,15 @@
 :root {
-  --shelter-color: forestgreen;
+  --shelter-color: darkorange;
   --vet-color: steelblue;
+  background-color: whitesmoke;
+  font-family: 'Lato', sans-serif;
 }
 
 .header {
   text-align: center;
   height: 60px;
   color: #fff;
-  background-color: darkorange;
+  background-color: darkslategray;
   display: flex;
 }
 
@@ -24,16 +26,16 @@
 }
 
 .place {
-  border: 10px solid black;
-  border-radius: 30px;
+  border: 5px solid black;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, .4),
               0 0 10px 0 rgba(0, 0, 0, .2);
+  background-color: white;
 }
 
 .place__header {
   color: white;
   margin: 0;
-  padding: 10px 0 20px;
+  padding: 10px 0 15px;
   text-align: center;
 }
 
@@ -64,7 +66,7 @@
 }
 
 .cat {
-  border: 1px solid rgba(0, 0, 0, .2);
+  border: 2px solid rgba(0, 0, 0, .1);
   border-radius: 10px;
   text-align: center;
   overflow: hidden;
@@ -81,5 +83,11 @@
 .cat__name {
   margin: 0;
   padding: 5px;
-  background-color: rgba(0, 0, 0, .2);
+  background-color: rgba(0, 0, 0, .1);
+}
+
+button {
+  border-radius: 2px;
+  font-size: 14px;
+  border: 1px solid darkslategray;
 }
