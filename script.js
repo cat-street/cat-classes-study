@@ -100,6 +100,7 @@ class CatList {
     this.cats.push(cat);
     DOMHelper.moveElement(cat.element, `.cats_type_${this.type}`);
     cat.update(this.moveCat.bind(this), this.type);
+    cat.element.classList.add('fadeIn');
   }
 
   moveCat(catId) {

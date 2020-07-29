@@ -147,3 +147,15 @@
   margin: 0;
   font-size: 3vmin;
 }
+
+/* fade in anim */
+
+.fadeIn {
+  opacity: 0;
+  animation: fadeInAnim 0.4s linear forwards;
+}
+
+@keyframes fadeInAnim {
+  from {opacity: 0; }
+  to {opacity: 1;}
+}
